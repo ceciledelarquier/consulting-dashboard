@@ -33,7 +33,12 @@ export const TabConsultante = () => {
         { src: "/formea-sante_Audit-IA/images/logo-durand.png", alt: "Durand Montouché" },
         { src: "/formea-sante_Audit-IA/images/logo-di.jpg", alt: "DI" },
         { src: "/formea-sante_Audit-IA/images/logo-cfd.jpg", alt: "CFD" },
-        { src: "/formea-sante_Audit-IA/images/logo-icade.jpg", alt: "Icade" }
+        { src: "/formea-sante_Audit-IA/images/logo-icade.jpg", alt: "Icade" },
+        { src: "/formea-sante_Audit-IA/images/logo-maison-cadres.png", alt: "Maison des Cadres" },
+        { src: "/formea-sante_Audit-IA/images/logo-notaires.png", alt: "Notaires de France" },
+        { src: "/formea-sante_Audit-IA/images/logo-ministere-armees.png", alt: "Ministère des Armées" },
+        { src: "/formea-sante_Audit-IA/images/logo-vinci.png", alt: "Vinci" },
+        { src: "/formea-sante_Audit-IA/images/logo-tepsa.png", alt: "Tepsa" }
     ];
 
     return (
