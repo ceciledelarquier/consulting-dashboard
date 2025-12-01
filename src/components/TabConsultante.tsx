@@ -1,7 +1,25 @@
 
-import { Briefcase, TrendingUp, BrainCircuit } from 'lucide-react';
+import { Briefcase, TrendingUp, BrainCircuit, Map, Zap, GraduationCap } from 'lucide-react';
 
 export const TabConsultante = () => {
+    const philosophyBlocks = [
+        {
+            icon: Map,
+            title: "Terrain",
+            description: "Je m'immerge à vos côtés (audit, documents, outils) pour comprendre votre réalité, pas la théorie."
+        },
+        {
+            icon: Zap,
+            title: "Pragmatisme",
+            description: "Pas de 'Grand Soir' de l'IA. On commence par des cas d'usage concrets qui libèrent du temps immédiatement."
+        },
+        {
+            icon: GraduationCap,
+            title: "Autonomie",
+            description: "Je ne crée pas de dépendance. Vous repartez avec les clés (méthode, prompting, roadmap) pour piloter la suite."
+        }
+    ];
+
     const expertiseBlocks = [
         {
             icon: Briefcase,
@@ -55,15 +73,44 @@ export const TabConsultante = () => {
                             />
                         </div>
                     </div>
-                    <div className="flex-1 text-center md:text-left">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-2">Cécile de Larquier</h2>
-                        <p className="text-xl text-[#3C39C4] font-medium mb-6">Consultante Stratégie & Transformation</p>
+                    <div className="flex-1 text-center md:text-left space-y-4">
+                        <div>
+                            <h2 className="text-3xl font-bold text-gray-900 mb-2">Cécile de Larquier</h2>
+                            <p className="text-xl text-[#3C39C4] font-medium">Consultante Stratégie & Transformation</p>
+                        </div>
+
                         <div className="bg-blue-50/50 p-6 rounded-xl border border-blue-100">
-                            <p className="text-gray-700 text-lg leading-relaxed italic">
-                                "Je ne suis pas une agence d'automatisation technique. Je suis une partenaire stratégique capable de comprendre votre P&L et de mettre les mains dans le moteur. <strong>L'IA est le moyen, pas la finalité.</strong>"
+                            <p className="text-gray-800 text-lg leading-relaxed font-medium">
+                                "L'IA est une transformation avant tout métier : comprendre les processus, identifier les goulots d'étranglement, soutenir les processus avec les bons outils."
                             </p>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            {/* Ma Philosophie */}
+            <section>
+                <div className="text-center mb-8">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3">Ma Philosophie</h3>
+                    <p className="text-gray-600 max-w-2xl mx-auto">
+                        Une approche de terrain, structurée et tournée vers votre autonomie.
+                    </p>
+                </div>
+                <div className="grid md:grid-cols-3 gap-6">
+                    {philosophyBlocks.map((block, index) => {
+                        const Icon = block.icon;
+                        return (
+                            <div key={index} className="bg-gray-50 rounded-xl p-6 border border-gray-100 text-center hover:bg-white hover:shadow-md transition-all">
+                                <div className="inline-flex p-3 rounded-full bg-white text-[#3C39C4] shadow-sm mb-4">
+                                    <Icon size={24} />
+                                </div>
+                                <h4 className="text-lg font-bold text-gray-900 mb-2">{block.title}</h4>
+                                <p className="text-gray-600 text-sm leading-relaxed">
+                                    {block.description}
+                                </p>
+                            </div>
+                        );
+                    })}
                 </div>
             </section>
 
@@ -72,7 +119,7 @@ export const TabConsultante = () => {
                 <div className="text-center mb-8">
                     <h3 className="text-2xl font-bold text-gray-900 mb-3">Une Transformation Cohérente</h3>
                     <p className="text-gray-600 max-w-2xl mx-auto">
-                        Toutes les transformations doivent être en cohérence pour structurer durablement votre entreprise.
+                        Allier la rigueur du conseil, l'agilité opérationnelle et l'accompagnement humain.
                     </p>
                 </div>
 
