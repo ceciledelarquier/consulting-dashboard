@@ -1,5 +1,5 @@
 
-import { Briefcase, GraduationCap, Award } from 'lucide-react';
+import { Award } from 'lucide-react';
 
 export const TabConsultante = () => {
     return (
@@ -10,22 +10,26 @@ export const TabConsultante = () => {
                     <div className="md:col-span-2 bg-gray-50 p-8 flex flex-col items-center text-center border-r border-gray-100">
                         <div className="w-48 h-48 rounded-full overflow-hidden mb-6 border-4 border-white shadow-md">
                             <img
-                                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                                alt="Consultante"
+                                src="/formea-sante_Audit-IA/images/cecile-photo.png"
+                                alt="Cécile"
                                 className="w-full h-full object-cover"
                             />
                         </div>
-                        <h2 className="text-2xl font-bold text-gray-900 mb-1">Lauriane</h2>
+                        <h2 className="text-2xl font-bold text-gray-900 mb-1">Cécile</h2>
                         <p className="text-[#3C39C4] font-medium mb-6">Senior Product Designer & Strategy</p>
 
                         <div className="w-full space-y-4 text-left">
                             <div className="flex items-center gap-3 text-gray-600">
-                                <Briefcase size={20} className="text-[#3C39C4]" />
+                                <div className="w-8 h-8 flex-shrink-0 rounded-full overflow-hidden bg-white border border-gray-200 flex items-center justify-center">
+                                    <img src="/formea-sante_Audit-IA/images/bearingpoint-logo.jpg" alt="BearingPoint" className="w-full h-full object-contain" />
+                                </div>
                                 <span>Ex-BearingPoint</span>
                             </div>
                             <div className="flex items-center gap-3 text-gray-600">
-                                <GraduationCap size={20} className="text-[#3C39C4]" />
-                                <span>Ex-Head of Ops</span>
+                                <div className="w-8 h-8 flex-shrink-0 rounded-full overflow-hidden bg-white border border-gray-200 flex items-center justify-center">
+                                    <img src="/formea-sante_Audit-IA/images/hosman-logo.png" alt="Hosman" className="w-full h-full object-contain" />
+                                </div>
+                                <span>Ex-Head of Ops (Hosman)</span>
                             </div>
                             <div className="flex items-center gap-3 text-gray-600">
                                 <Award size={20} className="text-[#3C39C4]" />
