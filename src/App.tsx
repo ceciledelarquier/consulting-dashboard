@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { Header } from './components/Header';
 import { cn } from './lib/utils';
-import { LayoutDashboard, Map, User, Euro } from 'lucide-react';
+import { LayoutDashboard, Map, User, Euro, AlertCircle } from 'lucide-react';
 
 import { TabSynthese } from './components/TabSynthese';
+import { TabEnjeux } from './components/TabEnjeux';
 import { TabRoadmap } from './components/TabRoadmap';
 import { TabConsultante } from './components/TabConsultante';
 import { TabInvestissement } from './components/TabInvestissement';
@@ -13,6 +14,7 @@ function App() {
 
   const tabs = [
     { id: 'synthese', label: 'Synthèse', icon: LayoutDashboard },
+    { id: 'enjeux', label: 'Enjeux', icon: AlertCircle },
     { id: 'roadmap', label: 'Roadmap', icon: Map },
     { id: 'consultante', label: 'Consultante', icon: User },
     { id: 'investissement', label: 'Investissement', icon: Euro },
@@ -50,6 +52,7 @@ function App() {
           {/* Tab Content */}
           <div className="min-h-[400px]">
             {activeTab === 'synthese' && <TabSynthese />}
+            {activeTab === 'enjeux' && <TabEnjeux />}
             {activeTab === 'roadmap' && <TabRoadmap />}
             {activeTab === 'consultante' && <TabConsultante />}
             {activeTab === 'investissement' && <TabInvestissement />}
