@@ -14,13 +14,13 @@ export const TabRoadmap = ({ onNavigate }: TabRoadmapProps) => {
                     <h2 className="text-3xl font-bold text-gray-900">Ce que je vous propose</h2>
                 </div>
 
-                <div className="bg-purple-50 border border-purple-100 rounded-xl p-8">
-                    <p className="text-2xl font-medium text-gray-900 text-center mb-6">
+                <div className="bg-gradient-to-br from-purple-100 to-blue-100 border border-purple-100 rounded-3xl p-10">
+                    <p className="text-2xl font-medium text-gray-900 text-center mb-8">
                         Un package simple en deux temps : <span className="font-bold text-purple-700">un audit flash + une journée de formation</span>.
                     </p>
-                    <div className="bg-white rounded-lg p-6 border-l-4 border-purple-600 flex items-start gap-4">
+                    <div className="bg-white/80 rounded-2xl p-8 border-l-4 border-purple-600 flex items-start gap-6 shadow-sm">
                         <Target className="text-purple-600 flex-shrink-0 mt-1" size={32} />
-                        <p className="text-lg text-gray-700">
+                        <p className="text-lg text-gray-700 leading-relaxed">
                             <span className="font-bold text-purple-700">Objectif :</span> identifier les <span className="font-semibold">opportunités de gain de temps</span>, prioriser les projets et vous proposer les <span className="font-semibold">outils les plus adaptés</span>.
                         </p>
                     </div>
@@ -95,26 +95,29 @@ export const TabRoadmap = ({ onNavigate }: TabRoadmapProps) => {
                 </div>
 
                 {/* Deliverable Box */}
-                <div className="bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-xl p-8">
-                    <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                        <Target className="text-green-600" size={24} />
+                {/* Deliverable Box */}
+                <div className="bg-gradient-to-br from-green-50 to-blue-50 border border-green-100 rounded-2xl p-8 shadow-sm">
+                    <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                        <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                            <Target className="text-green-600" size={20} />
+                        </div>
                         Une restitution claire :
                     </h3>
-                    <ul className="space-y-3">
+                    <ul className="space-y-4">
                         <li className="flex items-start gap-3 text-gray-700">
-                            <span className="w-2 h-2 rounded-full bg-green-500 mt-2 flex-shrink-0" />
+                            <span className="w-2.5 h-2.5 rounded-full bg-green-500 mt-2 flex-shrink-0" />
                             <span>un <span className="font-semibold">espace Notion structuré</span>,</span>
                         </li>
                         <li className="flex items-start gap-3 text-gray-700">
-                            <span className="w-2 h-2 rounded-full bg-green-500 mt-2 flex-shrink-0" />
+                            <span className="w-2.5 h-2.5 rounded-full bg-green-500 mt-2 flex-shrink-0" />
                             <span>une <span className="font-semibold">banque de prompts adaptée à FORMEA</span>,</span>
                         </li>
                         <li className="flex items-start gap-3 text-gray-700">
-                            <span className="w-2 h-2 rounded-full bg-green-500 mt-2 flex-shrink-0" />
+                            <span className="w-2.5 h-2.5 rounded-full bg-green-500 mt-2 flex-shrink-0" />
                             <span><span className="font-semibold">accès à tous les documents de formation</span>,</span>
                         </li>
                         <li className="flex items-start gap-3 text-gray-700">
-                            <span className="w-2 h-2 rounded-full bg-green-500 mt-2 flex-shrink-0" />
+                            <span className="w-2.5 h-2.5 rounded-full bg-green-500 mt-2 flex-shrink-0" />
                             <span><span className="font-semibold">liste des meilleurs outils d'IA</span> sur le marché.</span>
                         </li>
                     </ul>
@@ -137,29 +140,29 @@ export const TabRoadmap = ({ onNavigate }: TabRoadmapProps) => {
                     <p className="text-lg font-bold text-gray-900 mb-6">En une journée, on voit :</p>
 
                     <div className="space-y-6">
-                        <div className="flex gap-4 items-start">
-                            <div className="flex-shrink-0 w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                                <Sparkles className="text-purple-600" size={20} />
+                        <div className="flex gap-4 items-start bg-purple-50/50 p-4 rounded-xl border border-purple-100">
+                            <div className="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
+                                <Sparkles className="text-purple-600" size={24} />
                             </div>
-                            <p className="text-gray-700 text-lg pt-1">
+                            <p className="text-gray-700 text-lg pt-2">
                                 <span className="font-semibold">Apprendre à prompter</span> pour gagner en efficience dans ses utilisations de l'IA.
                             </p>
                         </div>
 
-                        <div className="flex gap-4 items-start">
-                            <div className="flex-shrink-0 w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                                <Target className="text-purple-600" size={20} />
+                        <div className="flex gap-4 items-start bg-purple-50/50 p-4 rounded-xl border border-purple-100">
+                            <div className="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
+                                <Target className="text-purple-600" size={24} />
                             </div>
-                            <p className="text-gray-700 text-lg pt-1">
+                            <p className="text-gray-700 text-lg pt-2">
                                 <span className="font-semibold">Travailler sur des cas d'usage de votre quotidien</span> pour comprendre où vous pouvez injecter de l'IA.
                             </p>
                         </div>
 
-                        <div className="flex gap-4 items-start">
-                            <div className="flex-shrink-0 w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                                <Database className="text-purple-600" size={20} />
+                        <div className="flex gap-4 items-start bg-purple-50/50 p-4 rounded-xl border border-purple-100">
+                            <div className="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
+                                <Database className="text-purple-600" size={24} />
                             </div>
-                            <p className="text-gray-700 text-lg pt-1">
+                            <p className="text-gray-700 text-lg pt-2">
                                 <span className="font-semibold">Connaître les meilleurs outils disponibles</span> en fonction de ce que vous avez à faire : rédiger (visuel et textes), analyser ou chercher des informations.
                             </p>
                         </div>
@@ -182,45 +185,45 @@ export const TabRoadmap = ({ onNavigate }: TabRoadmapProps) => {
                 <p className="text-lg text-gray-700 font-medium">À l'issue de la mission, vous avez :</p>
 
                 <div className="grid md:grid-cols-2 gap-6">
-                    <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div className="bg-gradient-to-br from-orange-50/50 to-red-50/50 p-8 rounded-2xl border border-orange-100 hover:shadow-md transition-all">
                         <div className="flex items-start gap-4">
-                            <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <Clock className="text-orange-600" size={24} />
+                            <div className="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <Clock className="text-orange-600" size={28} />
                             </div>
-                            <p className="text-gray-700 pt-2">
+                            <p className="text-gray-700 pt-2 text-lg">
                                 le <span className="font-bold">nombre d'heures en moyenne libérées par semaine</span> pour vous et vos bras droits (objectif 4-5h),
                             </p>
                         </div>
                     </div>
 
-                    <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div className="bg-gradient-to-br from-green-50/50 to-emerald-50/50 p-8 rounded-2xl border border-green-100 hover:shadow-md transition-all">
                         <div className="flex items-start gap-4">
-                            <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <FileCheck className="text-green-600" size={24} />
+                            <div className="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <FileCheck className="text-green-600" size={28} />
                             </div>
-                            <p className="text-gray-700 pt-2">
+                            <p className="text-gray-700 pt-2 text-lg">
                                 une <span className="font-bold">décision</span> sur votre capacité à maintenir un <span className="font-bold">BTS sécurisé sur le long terme</span>,
                             </p>
                         </div>
                     </div>
 
-                    <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div className="bg-gradient-to-br from-blue-50/50 to-indigo-50/50 p-8 rounded-2xl border border-blue-100 hover:shadow-md transition-all">
                         <div className="flex items-start gap-4">
-                            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <TrendingUp className="text-blue-600" size={24} />
+                            <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <TrendingUp className="text-blue-600" size={28} />
                             </div>
-                            <p className="text-gray-700 pt-2">
+                            <p className="text-gray-700 pt-2 text-lg">
                                 de la <span className="font-bold">visibilité sur vos perspectives d'automatisation</span>, de gain de temps et surtout sur le <span className="font-bold">stack d'outils IA le plus adapté</span> à vos besoins,
                             </p>
                         </div>
                     </div>
 
-                    <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div className="bg-gradient-to-br from-purple-50/50 to-violet-50/50 p-8 rounded-2xl border border-purple-100 hover:shadow-md transition-all">
                         <div className="flex items-start gap-4">
-                            <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <Sparkles className="text-purple-600" size={24} />
+                            <div className="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <Sparkles className="text-purple-600" size={28} />
                             </div>
-                            <p className="text-gray-700 pt-2">
+                            <p className="text-gray-700 pt-2 text-lg">
                                 un <span className="font-bold">espace de connaissance et des prompts</span> pour gagner du temps immédiatement.
                             </p>
                         </div>

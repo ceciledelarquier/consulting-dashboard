@@ -62,10 +62,10 @@ export const TabConsultante = () => {
     return (
         <div className="p-8 max-w-6xl mx-auto space-y-12">
             {/* Profile Section */}
-            <section className="bg-white rounded-2xl p-10 shadow-sm border border-gray-200">
-                <div className="flex flex-col md:flex-row items-center gap-8">
+            <section className="bg-gradient-to-br from-purple-100 to-blue-100 rounded-3xl p-10 shadow-sm border border-purple-100">
+                <div className="flex flex-col md:flex-row items-center gap-10">
                     <div className="flex-shrink-0">
-                        <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-[#3C39C4] shadow-lg">
+                        <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg">
                             <img
                                 src="/formea-sante_Audit-IA/images/cecile-photo.png"
                                 alt="Cécile"
@@ -73,14 +73,14 @@ export const TabConsultante = () => {
                             />
                         </div>
                     </div>
-                    <div className="flex-1 text-center md:text-left space-y-4">
+                    <div className="flex-1 text-center md:text-left space-y-6">
                         <div>
                             <h2 className="text-3xl font-bold text-gray-900 mb-2">Cécile de Larquier</h2>
-                            <p className="text-xl text-[#3C39C4] font-medium">Consultante Stratégie & Transformation</p>
+                            <p className="text-xl text-purple-700 font-medium">Consultante Stratégie & Transformation</p>
                         </div>
 
-                        <div className="bg-blue-50/50 p-6 rounded-xl border border-blue-100">
-                            <p className="text-gray-800 text-lg leading-relaxed font-medium">
+                        <div className="bg-white/80 p-6 rounded-2xl border-l-4 border-purple-600 shadow-sm">
+                            <p className="text-gray-800 text-lg leading-relaxed font-medium italic">
                                 "L'IA est une transformation avant tout métier : comprendre les processus, identifier les goulots d'étranglement, soutenir les processus avec les bons outils."
                             </p>
                         </div>
@@ -100,12 +100,12 @@ export const TabConsultante = () => {
                     {philosophyBlocks.map((block, index) => {
                         const Icon = block.icon;
                         return (
-                            <div key={index} className="bg-gray-50 rounded-xl p-6 border border-gray-100 text-center hover:bg-white hover:shadow-md transition-all">
-                                <div className="inline-flex p-3 rounded-full bg-white text-[#3C39C4] shadow-sm mb-4">
-                                    <Icon size={24} />
+                            <div key={index} className="bg-gradient-to-br from-blue-50/50 to-purple-50/50 rounded-2xl p-8 border border-gray-100 hover:shadow-md transition-all">
+                                <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center mb-5 mx-auto shadow-sm">
+                                    <Icon className="text-purple-600" size={28} />
                                 </div>
-                                <h4 className="text-lg font-bold text-gray-900 mb-2">{block.title}</h4>
-                                <p className="text-gray-600 text-sm leading-relaxed">
+                                <h4 className="text-lg font-bold text-gray-900 mb-3">{block.title}</h4>
+                                <p className="text-gray-600 leading-relaxed">
                                     {block.description}
                                 </p>
                             </div>
@@ -127,13 +127,13 @@ export const TabConsultante = () => {
                     {expertiseBlocks.map((block, index) => {
                         const Icon = block.icon;
                         return (
-                            <div key={index} className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                                <div className={`inline-flex p-3 rounded-xl mb-4 ${block.colorClass}`}>
-                                    <Icon size={28} />
+                            <div key={index} className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                                <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-6 ${block.colorClass.replace('text-', 'bg-').replace('50', '100')}`}>
+                                    <Icon className={block.colorClass.split(' ')[1]} size={28} />
                                 </div>
-                                <h4 className="text-lg font-bold text-gray-900 mb-1">{block.title}</h4>
-                                <p className="text-sm font-medium text-gray-500 mb-3 uppercase tracking-wide">{block.subtitle}</p>
-                                <p className="text-gray-600 leading-relaxed text-sm">
+                                <h4 className="text-xl font-bold text-gray-900 mb-1">{block.title}</h4>
+                                <p className="text-sm font-medium text-gray-500 mb-4 uppercase tracking-wide">{block.subtitle}</p>
+                                <p className="text-gray-600 leading-relaxed">
                                     {block.description}
                                 </p>
                             </div>

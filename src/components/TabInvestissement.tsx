@@ -10,12 +10,12 @@ export const TabInvestissement = () => {
                     <h2 className="text-3xl font-bold text-gray-900">7. Investissement & modalités</h2>
                 </div>
 
-                <div className="bg-gradient-to-br from-purple-50 to-blue-50 border-2 border-purple-200 rounded-2xl p-10 text-center shadow-lg">
-                    <div className="space-y-3">
-                        <p className="text-5xl font-extrabold text-purple-700">4 500 € HT</p>
+                <div className="bg-gradient-to-br from-purple-100 to-blue-100 border border-purple-100 rounded-3xl p-10 text-center shadow-sm">
+                    <div className="space-y-4">
+                        <p className="text-6xl font-extrabold text-purple-700">4 500 € HT</p>
                         <p className="text-xl font-medium text-gray-700">Forfait global</p>
-                        <div className="inline-block bg-white px-6 py-3 rounded-full border border-purple-200 mt-4">
-                            <p className="text-gray-700 font-medium">Mission clé en main – 5 à 6 jours d'intervention</p>
+                        <div className="inline-block bg-white/80 px-8 py-4 rounded-2xl border-l-4 border-purple-600 mt-6 shadow-sm">
+                            <p className="text-gray-800 font-bold text-lg">Mission clé en main – 5 à 6 jours d'intervention</p>
                         </div>
                     </div>
                 </div>
@@ -27,47 +27,47 @@ export const TabInvestissement = () => {
                     <h2 className="text-2xl font-bold text-gray-900">Ce forfait comprend</h2>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-4">
-                    <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                        <div className="flex items-start gap-3">
-                            <CheckCircle2 className="text-green-500 flex-shrink-0 mt-1" size={20} />
-                            <p className="text-gray-700 font-medium">Formation d'acculturation des équipes à l'IA</p>
+                <div className="grid md:grid-cols-2 gap-6">
+                    <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex items-start gap-4">
+                        <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <CheckCircle2 className="text-green-600" size={20} />
                         </div>
+                        <p className="text-gray-700 font-medium pt-2">Formation d'acculturation des équipes à l'IA</p>
                     </div>
 
-                    <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                        <div className="flex items-start gap-3">
-                            <CheckCircle2 className="text-green-500 flex-shrink-0 mt-1" size={20} />
-                            <p className="text-gray-700 font-medium">Audit & cartographie des processus sur le périmètre administratif</p>
+                    <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex items-start gap-4">
+                        <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <CheckCircle2 className="text-green-600" size={20} />
                         </div>
+                        <p className="text-gray-700 font-medium pt-2">Audit & cartographie des processus sur le périmètre administratif</p>
                     </div>
 
-                    <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                        <div className="flex items-start gap-3">
-                            <CheckCircle2 className="text-green-500 flex-shrink-0 mt-1" size={20} />
-                            <p className="text-gray-700 font-medium">Identification des outils IA adaptés à vos besoins</p>
+                    <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex items-start gap-4">
+                        <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <CheckCircle2 className="text-green-600" size={20} />
                         </div>
+                        <p className="text-gray-700 font-medium pt-2">Identification des outils IA adaptés à vos besoins</p>
                     </div>
 
-                    <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                        <div className="flex items-start gap-3">
-                            <CheckCircle2 className="text-green-500 flex-shrink-0 mt-1" size={20} />
-                            <p className="text-gray-700 font-medium">Analyse de l'implémentabilité des processus IA</p>
+                    <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex items-start gap-4">
+                        <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <CheckCircle2 className="text-green-600" size={20} />
                         </div>
+                        <p className="text-gray-700 font-medium pt-2">Analyse de l'implémentabilité des processus IA</p>
                     </div>
 
-                    <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                        <div className="flex items-start gap-3">
-                            <CheckCircle2 className="text-green-500 flex-shrink-0 mt-1" size={20} />
-                            <p className="text-gray-700 font-medium">Rédaction d'une banque de prompts prête à l'emploi</p>
+                    <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex items-start gap-4">
+                        <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <CheckCircle2 className="text-green-600" size={20} />
                         </div>
+                        <p className="text-gray-700 font-medium pt-2">Rédaction d'une banque de prompts prête à l'emploi</p>
                     </div>
 
-                    <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                        <div className="flex items-start gap-3">
-                            <CheckCircle2 className="text-green-500 flex-shrink-0 mt-1" size={20} />
-                            <p className="text-gray-700 font-medium">Livrables stratégiques & Roadmap 2025 pour déployer les actions priorisées</p>
+                    <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex items-start gap-4">
+                        <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <CheckCircle2 className="text-green-600" size={20} />
                         </div>
+                        <p className="text-gray-700 font-medium pt-2">Livrables stratégiques & Roadmap 2025 pour déployer les actions priorisées</p>
                     </div>
                 </div>
 
@@ -86,32 +86,32 @@ export const TabInvestissement = () => {
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6">
-                    <div className="bg-white p-8 rounded-xl border-2 border-orange-200 shadow-sm">
-                        <div className="flex items-center gap-4 mb-4">
-                            <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center">
-                                <CreditCard className="text-orange-600" size={28} />
+                    <div className="bg-gradient-to-br from-orange-50/50 to-red-50/50 p-8 rounded-2xl border border-orange-100 shadow-sm">
+                        <div className="flex items-center gap-6 mb-6">
+                            <div className="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <CreditCard className="text-orange-600" size={32} />
                             </div>
                             <div>
-                                <p className="text-3xl font-bold text-orange-600">30%</p>
-                                <p className="text-sm text-gray-500 font-medium">Avant le lancement</p>
+                                <p className="text-4xl font-extrabold text-orange-600">30%</p>
+                                <p className="text-sm text-gray-500 font-bold uppercase tracking-wide">Avant le lancement</p>
                             </div>
                         </div>
-                        <p className="text-gray-700 font-medium">
+                        <p className="text-gray-700 font-medium text-lg">
                             30 % du montant de la mission à régler avant le lancement.
                         </p>
                     </div>
 
-                    <div className="bg-white p-8 rounded-xl border-2 border-orange-200 shadow-sm">
-                        <div className="flex items-center gap-4 mb-4">
-                            <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center">
-                                <CreditCard className="text-orange-600" size={28} />
+                    <div className="bg-gradient-to-br from-orange-50/50 to-red-50/50 p-8 rounded-2xl border border-orange-100 shadow-sm">
+                        <div className="flex items-center gap-6 mb-6">
+                            <div className="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <CreditCard className="text-orange-600" size={32} />
                             </div>
                             <div>
-                                <p className="text-3xl font-bold text-orange-600">70%</p>
-                                <p className="text-sm text-gray-500 font-medium">Dans les 30 jours</p>
+                                <p className="text-4xl font-extrabold text-orange-600">70%</p>
+                                <p className="text-sm text-gray-500 font-bold uppercase tracking-wide">Dans les 30 jours</p>
                             </div>
                         </div>
-                        <p className="text-gray-700 font-medium">
+                        <p className="text-gray-700 font-medium text-lg">
                             70 % restants à régler dans les 30 jours suivant la fin de la mission.
                         </p>
                     </div>
