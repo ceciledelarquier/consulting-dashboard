@@ -7,7 +7,7 @@ export const TabInvestissement = () => {
             {/* SECTION INTRO - INVESTISSEMENT */}
             <section className="space-y-6">
                 <div className="border-l-4 border-purple-600 pl-4">
-                    <h2 className="text-3xl font-bold text-gray-900">7. Investissement & modalités</h2>
+                    <h2 className="text-3xl font-bold text-gray-900">Investissement & modalités</h2>
                 </div>
 
                 <div className="bg-gradient-to-br from-purple-100 to-blue-100 border border-purple-100 rounded-3xl p-10 text-center shadow-sm">
@@ -15,7 +15,7 @@ export const TabInvestissement = () => {
                         <p className="text-6xl font-extrabold text-purple-700">4 500 € HT</p>
                         <p className="text-xl font-medium text-gray-700">Forfait global</p>
                         <div className="inline-block bg-white/80 px-8 py-4 rounded-2xl border-l-4 border-purple-600 mt-6 shadow-sm">
-                            <p className="text-gray-800 font-bold text-lg">Mission clé en main – 5 à 6 jours d'intervention</p>
+                            <p className="text-gray-800 font-bold text-lg">4 jours d'audit + 1 journée de formation</p>
                         </div>
                     </div>
                 </div>
@@ -79,6 +79,34 @@ export const TabInvestissement = () => {
                 </div>
             </section>
 
+            {/* SECTION - DÉLAIS & CALENDRIER */}
+            <section className="space-y-8">
+                <div className="border-l-4 border-purple-600 pl-4">
+                    <h2 className="text-2xl font-bold text-gray-900">Délais & calendrier</h2>
+                </div>
+
+                <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+                    <div className="flex items-start gap-4 mb-6">
+                        <Calendar className="text-purple-600 flex-shrink-0" size={32} />
+                        <div>
+                            <p className="text-xl font-bold text-gray-900 mb-2">Mission finalisée avant le 23 décembre</p>
+                            <p className="text-gray-600">Afin de :</p>
+                        </div>
+                    </div>
+
+                    <ul className="space-y-4 ml-4">
+                        <li className="flex items-start gap-3 text-gray-700">
+                            <span className="w-2 h-2 rounded-full bg-purple-500 mt-2.5 flex-shrink-0" />
+                            <span>vous donner une <span className="font-semibold">vision claire des scénarios possibles</span>,</span>
+                        </li>
+                        <li className="flex items-start gap-3 text-gray-700">
+                            <span className="w-2 h-2 rounded-full bg-purple-500 mt-2.5 flex-shrink-0" />
+                            <span>vous aider à prendre une <span className="font-semibold">décision éclairée sur la pérennité du BTS longue durée</span> dès la rentrée suivante.</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
             {/* SECTION - MODALITÉS DE PAIEMENT */}
             <section className="space-y-8">
                 <div className="border-l-4 border-orange-500 pl-4">
@@ -115,34 +143,6 @@ export const TabInvestissement = () => {
                             70 % restants à régler dans les 30 jours suivant la fin de la mission.
                         </p>
                     </div>
-                </div>
-            </section>
-
-            {/* SECTION - DÉLAIS & CALENDRIER */}
-            <section className="space-y-8">
-                <div className="border-l-4 border-purple-600 pl-4">
-                    <h2 className="text-2xl font-bold text-gray-900">Délais & calendrier</h2>
-                </div>
-
-                <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
-                    <div className="flex items-start gap-4 mb-6">
-                        <Calendar className="text-purple-600 flex-shrink-0" size={32} />
-                        <div>
-                            <p className="text-xl font-bold text-gray-900 mb-2">Mission finalisée avant le 23 décembre</p>
-                            <p className="text-gray-600">Afin de :</p>
-                        </div>
-                    </div>
-
-                    <ul className="space-y-4 ml-4">
-                        <li className="flex items-start gap-3 text-gray-700">
-                            <span className="w-2 h-2 rounded-full bg-purple-500 mt-2.5 flex-shrink-0" />
-                            <span>vous donner une <span className="font-semibold">vision claire des scénarios possibles</span>,</span>
-                        </li>
-                        <li className="flex items-start gap-3 text-gray-700">
-                            <span className="w-2 h-2 rounded-full bg-purple-500 mt-2.5 flex-shrink-0" />
-                            <span>vous aider à prendre une <span className="font-semibold">décision éclairée sur la pérennité du BTS longue durée</span> dès la rentrée suivante.</span>
-                        </li>
-                    </ul>
                 </div>
             </section>
 
