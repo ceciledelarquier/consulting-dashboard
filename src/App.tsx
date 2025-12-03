@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Header } from './components/Header';
 import { cn } from './lib/utils';
 import { LayoutDashboard, Map, User, Euro } from 'lucide-react';
@@ -10,6 +10,11 @@ import { TabInvestissement } from './components/TabInvestissement';
 
 function App() {
   const [activeTab, setActiveTab] = useState('synthese');
+
+  // Scroll to top when activeTab changes
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [activeTab]);
 
   const tabs = [
     { id: 'synthese', label: 'Synthèse', icon: LayoutDashboard },

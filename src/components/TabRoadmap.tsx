@@ -16,7 +16,7 @@ export const TabRoadmap = ({ onNavigate }: TabRoadmapProps) => {
 
                 <div className="bg-gradient-to-br from-[#9CBF9F]/20 to-blue-50 border border-[#9CBF9F]/20 rounded-3xl p-10">
                     <p className="text-2xl font-medium text-gray-900 text-center mb-8">
-                        Un package simple en deux temps : <span className="font-bold text-[#9CBF9F]">un audit flash + une journée de formation</span>.
+                        Un package simple en deux temps : <span className="font-bold text-[#9CBF9F]">un audit flash + une journée de formation</span> <span className="font-bold text-gray-900">avant le 23 décembre 2025</span>.
                     </p>
                     <div className="bg-white/80 rounded-2xl p-8 border-l-4 border-[#9CBF9F] flex items-start gap-6 shadow-sm">
                         <Target className="text-[#9CBF9F] flex-shrink-0 mt-1" size={32} />

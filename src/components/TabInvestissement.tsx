@@ -151,9 +151,9 @@ export const TabInvestissement = () => {
                 <div className="text-center">
                     <a
                         href="mailto:cdelarquier@gmail.com?subject=Validation%20de%20l%E2%80%99offre%20%E2%80%93%20Investissement%20%26%20modalit%C3%A9s%20FORMEA%20Sant%C3%A9&body=Bonjour%20C%C3%A9cile%2C%0A%0AJe%20vous%20confirme%20ma%20volont%C3%A9%20de%20valider%20l%E2%80%99offre%20pr%C3%A9sent%C3%A9e%20(forfait%20global%204%20500%20%E2%82%AC%20HT)%20pour%20FORMEA%20Sant%C3%A9.%0A%0A%5BPr%C3%A9cisions%20%C3%A0%20compl%C3%A9ter%20ici%5D%0A%0ABien%20%C3%A0%20vous%2C%0A%5BNom%20%2F%20Fonction%5D"
-                        className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-[#9CBF9F] text-white rounded-xl font-bold text-xl hover:bg-[#8ba88e] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+                        className="group flex items-center justify-center gap-3 px-8 py-4 bg-[#9CBF9F] text-white rounded-xl font-bold text-lg hover:bg-[#8ba88e] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
                     >
-                        <Mail size={24} />
+                        <Mail size={20} />
                         Valider l'offre
                     </a>
                 </div>

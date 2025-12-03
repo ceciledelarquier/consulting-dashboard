@@ -179,7 +179,7 @@ export const TabSynthese = ({ onNavigate }: TabSyntheseProps) => {
                 <div className="flex flex-col sm:flex-row justify-center gap-6">
                     <button
                         onClick={() => onNavigate?.('roadmap')}
-                        className="group flex items-center justify-center gap-3 px-8 py-4 bg-white border-2 border-[#9CBF9F] text-[#9CBF9F] rounded-xl font-bold text-lg hover:bg-blue-50 transition-all shadow-sm hover:shadow-md"
+                        className="group flex items-center justify-center gap-3 px-8 py-4 bg-white border-2 border-[#9CBF9F] text-[#9CBF9F] rounded-xl font-bold text-lg hover:bg-green-50 transition-all shadow-sm hover:shadow-md"
                     >
                         Découvrir l’accompagnement
                         <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
