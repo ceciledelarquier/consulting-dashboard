@@ -50,7 +50,7 @@ function App() {
           {/* Tab Content */}
           <div className="min-h-[400px]">
             {activeTab === 'synthese' && <TabSynthese onNavigate={setActiveTab} />}
-            {activeTab === 'roadmap' && <TabRoadmap />}
+            {activeTab === 'roadmap' && <TabRoadmap onNavigate={setActiveTab} />}
             {activeTab === 'consultante' && <TabConsultante />}
             {activeTab === 'investissement' && <TabInvestissement />}
           </div>

@@ -1,7 +1,7 @@
 
 export const Header = () => {
     return (
-        <header className="bg-[#3C39C4] text-white py-8 px-6 shadow-md">
+        <header className="bg-gradient-to-r from-purple-700 to-violet-600 text-white py-8 px-6 shadow-md">
             <div className="max-w-5xl mx-auto flex items-center justify-between">
                 <div>
                     <h1 className="text-3xl font-bold mb-2">Bienvenue, Lauriane !</h1>
