@@ -127,40 +127,40 @@ export const TabSynthese = ({ onNavigate }: TabSyntheseProps) => {
                 </div>
             </section>
 
-            {/* SECTION 3: L’opportunité */}
+            {/* SECTION 3: L'opportunité */}
             <section className="space-y-8">
                 <div className="border-l-4 border-green-500 pl-4">
                     <h2 className="text-2xl font-bold text-gray-900">3. L'opportunité</h2>
-                    <p className="text-lg text-green-600 font-medium">Structurer pour scaler.</p>
+                    <p className="text-lg text-gray-500 font-medium">Simplifier, pas ajouter une couche de complexité.</p>
                 </div>
 
-                <p className="text-xl text-gray-700 max-w-3xl leading-relaxed">
-                    L’idée, ce n’est pas d’ajouter une couche de complexité, mais de <span className="font-bold text-green-600">remettre de l’ordre</span> pour vous faire gagner du temps au quotidien.
+                <p className="text-lg text-gray-700 max-w-4xl leading-relaxed">
+                    L'idée, ce n'est pas d'ajouter une couche de complexité, mais de <span className="font-semibold">remettre de l'ordre</span> pour vous faire gagner du temps au quotidien.
                 </p>
 
                 <div className="grid md:grid-cols-3 gap-6">
-                    <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
-                        <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4 mx-auto group-hover:bg-blue-100 transition-colors">
-                            <Clock className="text-blue-600" size={24} />
+                    <div className="bg-gradient-to-br from-blue-50/50 to-purple-50/50 p-8 rounded-2xl border border-gray-100">
+                        <div className="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-5">
+                            <Clock className="text-purple-600" size={28} />
                         </div>
-                        <h3 className="text-lg font-bold text-gray-900 mb-2 text-center">Repenser vos processus</h3>
-                        <p className="text-gray-600 text-center">Enlever les tâches répétitives qui consomment votre énergie.</p>
+                        <h3 className="text-lg font-bold text-gray-900 mb-3">Repenser vos processus</h3>
+                        <p className="text-gray-600 leading-relaxed">Enlever les tâches répétitives qui consomment votre énergie.</p>
                     </div>
 
-                    <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
-                        <div className="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center mb-4 mx-auto group-hover:bg-purple-100 transition-colors">
-                            <Users className="text-purple-600" size={24} />
+                    <div className="bg-gradient-to-br from-blue-50/50 to-purple-50/50 p-8 rounded-2xl border border-gray-100">
+                        <div className="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-5">
+                            <Users className="text-purple-600" size={28} />
                         </div>
-                        <h3 className="text-lg font-bold text-gray-900 mb-2 text-center">Utiliser l'IA là où ça compte</h3>
-                        <p className="text-gray-600 text-center">Placer l'IA uniquement là où elle apporte un vrai gain de temps.</p>
+                        <h3 className="text-lg font-bold text-gray-900 mb-3">Utiliser l'IA là où ça compte</h3>
+                        <p className="text-gray-600 leading-relaxed">Placer l'IA uniquement là où elle apporte un vrai gain de temps.</p>
                     </div>
 
-                    <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
-                        <div className="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center mb-4 mx-auto group-hover:bg-green-100 transition-colors">
-                            <Users className="text-green-600" size={24} />
+                    <div className="bg-gradient-to-br from-blue-50/50 to-purple-50/50 p-8 rounded-2xl border border-gray-100">
+                        <div className="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-5">
+                            <Users className="text-purple-600" size={28} />
                         </div>
-                        <h3 className="text-lg font-bold text-gray-900 mb-2 text-center">Redonner de l'air à l'équipe</h3>
-                        <p className="text-gray-600 text-center">Vous permettre de vous concentrer sur le pédagogique et le temps de qualité avec les apprenants.</p>
+                        <h3 className="text-lg font-bold text-gray-900 mb-3">Redonner de l'air à l'équipe</h3>
+                        <p className="text-gray-600 leading-relaxed">Vous permettre de vous concentrer sur le pédagogique et le temps de qualité avec les apprenants.</p>
                     </div>
                 </div>
             </section>
