@@ -78,41 +78,48 @@ export const TabSynthese = ({ onNavigate }: TabSyntheseProps) => {
 
                 <div className="grid md:grid-cols-2 gap-6">
                     {/* Bloc A */}
-                    <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                        <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                            <Clock className="text-gray-400" size={24} />
-                            Ce qui se passe au quotidien
-                        </h3>
+                    <div className="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <div className="flex items-center gap-3 mb-6">
+                            <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <Clock className="text-pink-500" size={24} />
+                            </div>
+                            <h3 className="text-xl font-bold text-gray-900">Ce qui se passe au quotidien</h3>
+                        </div>
                         <ul className="space-y-4">
                             <li className="flex items-start gap-3 text-gray-600">
-                                <span className="w-1.5 h-1.5 rounded-full bg-orange-400 mt-2.5 flex-shrink-0" />
-                                <span>Vous avez tout construit vous-même, et l’équipe est arrivée à saturation.</span>
+                                <span className="w-2 h-2 rounded-full bg-pink-400 mt-2.5 flex-shrink-0" />
+                                <span>Vous avez tout construit vous-même, et l'équipe est arrivée à saturation.</span>
                             </li>
                             <li className="flex items-start gap-3 text-gray-600">
-                                <span className="w-1.5 h-1.5 rounded-full bg-orange-400 mt-2.5 flex-shrink-0" />
-                                <span>Vous passez vos journées sur l’administratif : mails, stages, financements, suivi des dossiers…</span>
+                                <span className="w-2 h-2 rounded-full bg-pink-400 mt-2.5 flex-shrink-0" />
+                                <span>Vous passez vos journées sur l'administratif : mails, stages, financements, suivi des dossiers…</span>
                             </li>
                             <li className="flex items-start gap-3 text-gray-600">
-                                <span className="w-1.5 h-1.5 rounded-full bg-orange-400 mt-2.5 flex-shrink-0" />
+                                <span className="w-2 h-2 rounded-full bg-pink-400 mt-2.5 flex-shrink-0" />
                                 <span>Vous avez moins de temps pour ce qui fait vraiment votre valeur : le temps avec les apprenants et la qualité pédagogique.</span>
                             </li>
                         </ul>
                     </div>
 
                     {/* Bloc B */}
-                    <div className="bg-gray-50 p-8 rounded-2xl border border-gray-200">
-                        <h3 className="text-xl font-bold text-gray-900 mb-6">Concrètement :</h3>
+                    <div className="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <div className="flex items-center gap-3 mb-6">
+                            <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <AlertTriangle className="text-orange-500" size={24} />
+                            </div>
+                            <h3 className="text-xl font-bold text-gray-900">Concrètement</h3>
+                        </div>
                         <ul className="space-y-4">
-                            <li className="flex items-start gap-3 text-gray-700 font-medium">
-                                <AlertTriangle className="text-orange-500 mt-0.5" size={18} />
+                            <li className="flex items-start gap-3 text-gray-600">
+                                <span className="w-2 h-2 rounded-full bg-orange-400 mt-2.5 flex-shrink-0" />
                                 <span>Le BTS long est difficile à maintenir dans ces conditions.</span>
                             </li>
-                            <li className="flex items-start gap-3 text-gray-700 font-medium">
-                                <AlertTriangle className="text-orange-500 mt-0.5" size={18} />
+                            <li className="flex items-start gap-3 text-gray-600">
+                                <span className="w-2 h-2 rounded-full bg-orange-400 mt-2.5 flex-shrink-0" />
                                 <span>Votre nouvelle offre de formation reste bloquée faute de temps.</span>
                             </li>
-                            <li className="flex items-start gap-3 text-gray-700 font-medium">
-                                <AlertTriangle className="text-orange-500 mt-0.5" size={18} />
+                            <li className="flex items-start gap-3 text-gray-600">
+                                <span className="w-2 h-2 rounded-full bg-orange-400 mt-2.5 flex-shrink-0" />
                                 <span>Vous avez testé plusieurs outils, mais malgré le temps passé, tous ne sont pas adaptés.</span>
                             </li>
                         </ul>
