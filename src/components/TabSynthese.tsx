@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle2, AlertTriangle, Clock, Users, GraduationCap, Mail, TrendingUp } from 'lucide-react';
+import { ArrowRight, AlertTriangle, Clock, Users, GraduationCap, Mail } from 'lucide-react';
 
 
 interface TabSyntheseProps {
@@ -11,53 +11,55 @@ export const TabSynthese = ({ onNavigate }: TabSyntheseProps) => {
 
             {/* SECTION 1: Où vous en êtes */}
             <section className="space-y-8">
-                <div className="border-l-4 border-purple-600 pl-4 flex items-center gap-3">
-                    <TrendingUp className="text-purple-600" size={32} />
-                    <div>
-                        <h2 className="text-2xl font-bold text-gray-900">1. Forméa Santé</h2>
-                        <p className="text-lg text-purple-600 font-medium">Un BTS reconnu et une entreprise en croissance.</p>
-                    </div>
+                <div>
+                    <h2 className="text-3xl font-bold text-gray-900">1. Où vous en êtes</h2>
+                    <p className="text-lg text-gray-500 font-medium mt-2">Un modèle qui fonctionne déjà.</p>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-8 items-center">
-                    <div className="bg-gradient-to-br from-purple-50 to-blue-50 p-8 rounded-2xl shadow-sm border border-purple-100">
-                        <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                            <span className="font-bold text-purple-700">FORMEA Santé</span>, c'est aujourd'hui une réussite incontestable :
-                        </p>
-                        <ul className="space-y-4">
-                            <li className="flex items-center gap-3 text-gray-700">
-                                <CheckCircle2 className="text-green-500 flex-shrink-0" size={20} />
-                                <span><span className="font-bold">250 apprenants</span> suivis sur 2 à 5 ans</span>
-                            </li>
-                            <li className="flex items-center gap-3 text-gray-700">
-                                <CheckCircle2 className="text-green-500 flex-shrink-0" size={20} />
-                                <span>Une équipe d'une <span className="font-bold">douzaine de personnes</span></span>
-                            </li>
-                            <li className="flex items-center gap-3 text-gray-700">
-                                <CheckCircle2 className="text-green-500 flex-shrink-0" size={20} />
-                                <span>Un <span className="font-bold">BTS diététique à distance</span> qui fonctionne très bien</span>
-                            </li>
-                        </ul>
-                        <div className="mt-6 p-4 bg-white/80 rounded-lg border-l-4 border-purple-600">
-                            <p className="text-gray-700 italic font-medium">
-                                Votre modèle a fait ses preuves et vous êtes devenue une référence en formation à distance en diététique.
-                            </p>
+                <div className="bg-gradient-to-br from-purple-100 to-blue-100 p-10 rounded-3xl">
+                    <p className="text-xl font-bold text-gray-900 mb-6">FORMEA Santé, c'est :</p>
+                    <ul className="space-y-4 mb-8">
+                        <li className="flex items-start gap-3 text-gray-700 text-lg">
+                            <span className="w-2.5 h-2.5 rounded-full bg-indigo-600 mt-2 flex-shrink-0" />
+                            <span><span className="font-semibold">250 apprenants</span> suivis sur 2 à 5 ans,</span>
+                        </li>
+                        <li className="flex items-start gap-3 text-gray-700 text-lg">
+                            <span className="w-2.5 h-2.5 rounded-full bg-indigo-600 mt-2 flex-shrink-0" />
+                            <span>une <span className="font-semibold">équipe d'une douzaine de personnes</span>,</span>
+                        </li>
+                        <li className="flex items-start gap-3 text-gray-700 text-lg">
+                            <span className="w-2.5 h-2.5 rounded-full bg-indigo-600 mt-2 flex-shrink-0" />
+                            <span>un <span className="font-semibold">BTS diététique à distance</span> qui fonctionne très bien.</span>
+                        </li>
+                    </ul>
+                    <p className="text-gray-900 font-semibold text-lg">
+                        Votre modèle a fait ses preuves et vous êtes devenue une référence en formation à distance en diététique.
+                    </p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="bg-white p-8 rounded-2xl border border-gray-100">
+                        <div className="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                            <Users className="text-indigo-600" size={32} />
                         </div>
+                        <p className="text-3xl font-extrabold text-gray-900 text-center mb-2">250+</p>
+                        <p className="text-gray-600 text-center">apprenants suivis sur 2 à 5 ans</p>
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                        <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center justify-center text-center hover:shadow-md transition-shadow">
-                            <span className="text-4xl font-extrabold text-purple-600 mb-2">250+</span>
-                            <span className="text-sm font-medium text-gray-500 uppercase tracking-wide">Apprenants suivis</span>
+                    <div className="bg-white p-8 rounded-2xl border border-gray-100">
+                        <div className="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                            <Users className="text-indigo-600" size={32} />
                         </div>
-                        <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center justify-center text-center hover:shadow-md transition-shadow">
-                            <span className="text-4xl font-extrabold text-purple-600 mb-2">≈ 12</span>
-                            <span className="text-sm font-medium text-gray-500 uppercase tracking-wide">Personnes équipe</span>
+                        <p className="text-3xl font-extrabold text-gray-900 text-center mb-2">≈ 12</p>
+                        <p className="text-gray-600 text-center">personnes dans l'équipe</p>
+                    </div>
+
+                    <div className="bg-white p-8 rounded-2xl border border-gray-100">
+                        <div className="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                            <GraduationCap className="text-indigo-600" size={32} />
                         </div>
-                        <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center justify-center text-center hover:shadow-md transition-shadow">
-                            <GraduationCap className="text-purple-600 mb-2" size={40} />
-                            <span className="text-sm font-medium text-gray-500 uppercase tracking-wide">BTS Reconnu</span>
-                        </div>
+                        <p className="text-xl font-bold text-gray-900 text-center mb-2">BTS Diététique</p>
+                        <p className="text-gray-600 text-center">Formation à distance reconnue</p>
                     </div>
                 </div>
             </section>
