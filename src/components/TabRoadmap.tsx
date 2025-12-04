@@ -44,7 +44,7 @@ export const TabRoadmap = ({ onNavigate }: TabRoadmapProps) => {
                             <span className="text-green-700 font-bold text-lg">1</span>
                         </div>
                         <div className="flex-1 bg-white p-6 rounded-xl border border-gray-200 shadow-sm relative">
-                            <span className="absolute top-4 right-4 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                            <span className="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
                                 PRÉSENTIEL
                             </span>
                             <p className="text-gray-700 text-lg font-bold mb-3">1 journée sur place :</p>
@@ -135,7 +135,7 @@ export const TabRoadmap = ({ onNavigate }: TabRoadmapProps) => {
                 </div>
 
                 <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm relative">
-                    <span className="absolute top-4 right-4 bg-[#9CBF9F] text-white text-xs font-bold px-3 py-1 rounded-full">
+                    <span className="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
                         PRÉSENTIEL
                     </span>
                     <p className="text-lg font-bold text-gray-900 mb-6">En une journée, on voit :</p>
