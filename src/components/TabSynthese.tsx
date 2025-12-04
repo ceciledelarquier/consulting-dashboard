@@ -12,7 +12,7 @@ export const TabSynthese = ({ onNavigate }: TabSyntheseProps) => {
             {/* SECTION 1: Où vous en êtes */}
             <section className="space-y-8">
                 <div>
-                    <h2 className="text-3xl font-bold text-gray-900">1. Où vous en êtes</h2>
+                    <h2 className="text-3xl font-bold text-gray-900">Où vous en êtes</h2>
                     <p className="text-lg text-gray-500 font-medium mt-2">Un modèle qui fonctionne déjà.</p>
                 </div>
 
@@ -67,7 +67,7 @@ export const TabSynthese = ({ onNavigate }: TabSyntheseProps) => {
             {/* SECTION 2: Votre situation actuelle */}
             <section className="space-y-8">
                 <div className="border-l-4 border-orange-500 pl-4">
-                    <h2 className="text-2xl font-bold text-gray-900">2. Votre situation actuelle</h2>
+                    <h2 className="text-2xl font-bold text-gray-900">Votre situation actuelle</h2>
                     <p className="text-lg text-gray-500 font-medium">Vous arrivez à un plafond de verre.</p>
                 </div>
 
@@ -132,7 +132,7 @@ export const TabSynthese = ({ onNavigate }: TabSyntheseProps) => {
             {/* SECTION 3: L'opportunité */}
             <section className="space-y-8">
                 <div className="border-l-4 border-green-500 pl-4">
-                    <h2 className="text-2xl font-bold text-gray-900">3. L'opportunité</h2>
+                    <h2 className="text-2xl font-bold text-gray-900">L'IA comme opportunité de gain de temps</h2>
                     <p className="text-lg text-gray-500 font-medium">Simplifier, pas ajouter une couche de complexité.</p>
                 </div>
 
